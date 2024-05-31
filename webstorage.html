@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="fname">
+    <p id="print"></p>
+    <button type="submit" onclick="funcname()">Submit</button>
+
+<script>
+
+function funcname() {
+    var name = document.getElementById("fname").value;
+    localStorage.setItem("Name" , name);
+   var get_name = localStorage.getItem("Name");
+   document.getElementById("print").innerHTML = get_name;
+}
+
+    
+</script>
+
+
+</body>
+</html>

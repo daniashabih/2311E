@@ -1,0 +1,45 @@
+FUNCTIONS 
+Block of code that perform a specific task which can be invoked whenever needed.
+
+Simple Function , Parameterized Function , Return type Function , Arrow Function
+
+Methods :
+
+console.log , .write , "abc".toUpperCase , .toLowerCase , .concat
+
+#syntax function
+simple function:
+
+function funcname() {
+//work
+}
+
+parameterized function:
+//parameter act krty hain as variable
+function funcname(params){
+//work
+}
+
+return type function:
+function funcname(params){
+//work
+return  "Dania";
+}
+
+
+arrow function 
+JS ES6
+
+var func = (a , b)=>{
+//work
+}
+
+
+Built - in Function
+alert()
+confirm()
+parseInt()
+parseFloat()
+prompt()
+isNaN()
+eval()

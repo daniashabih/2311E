@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="name" placeholder="Enter your name">
+    <p id="nameMsg"></p>
+    <input type="text" name="" id="email" placeholder="Enter your email">
+    <p id="emailMsg"></p>
+    <input type="text" name="" id="number" placeholder="Enter your number">
+    <p id="numberMsg"></p>
+    <button type="button" onclick="validate()">Submit</button>
+
+    <script>
+        function validate() {
+            var user_name = document.getElementById('name').value;
+            var user_email = document.getElementById('email').value;
+            var user_number = document.getElementById('number').value;
+
+            var name_exp = /^[A-Za-z ]{3,20}$/;
+            var email_exp = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            var num_exp = /^[0-9+]{11,20}$/;
+
+            if (name_exp.test(user_name)) {
+                document.getElementById('nameMsg').innerHTML = "Name is Valid";
+            } else {
+                document.getElementById('nameMsg').innerHTML = "Name is Invalid";
+            }
+
+            if (email_exp.test(user_email)) {
+                document.getElementById('emailMsg').innerHTML = "Email is Valid";
+            } else {
+                document.getElementById('emailMsg').innerHTML = "Email is Invalid";
+            }
+
+            if (num_exp.test(user_number)) {
+                document.getElementById('numberMsg').innerHTML = "Number is Valid";
+            } else {
+                document.getElementById('numberMsg').innerHTML = "Number is Invalid";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

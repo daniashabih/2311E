@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+        <input type="text" name="" id="name">
+        <p id="demo"></p>
+        <button type="submit" onclick="myfunc()">Submit</button>
+
+
+<script>
+    // function vowels(str) {
+    //     var count = 0;
+    //     for (const char of str) {
+    //         if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+    //           count++  
+    //         }
+    //     }
+    //     return count;
+    // }
+
+
+    //     var nums = [2,4,6,8,10];
+    //    nums.forEach((num) => {
+    //     console.log(num*num);
+    //    });
+
+
+// var std = {
+// age : 13,
+// email : "asdsdsds",
+// name : "dsdsdsds",
+// std2 : {
+//     location : "asd",
+//     city: "qwe"
+// },
+// arr: ["apple" , "banana"],
+// func : ()=>{
+//     return 12
+// }
+// }
+// console.log(std.func());
+
+function myfunc() {
+    
+var name = document.getElementById('name').value;
+var exp = /^[A-z. _]+$/gm;
+if (exp.test(name) ) {
+    document.getElementById('demo').innerHTML = "Correct"
+} else {
+    document.getElementById('demo').innerHTML = "InCorrect"
+}
+
+
+
+
+}
+
+
+</script>
+
+</body>
+</html>
